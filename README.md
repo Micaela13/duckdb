@@ -119,7 +119,9 @@ generar los resultados principales.
 
 ## Como levantar el ambiente
 
-<!-- TODO (Ejercicio 1.5) -->
+Se clona el fork del repositorio, el proyecto utiliza Docker compose, por lo que se debe de tener abirto Docker desktop abierto. La primera ejecución Docker descarga y construye las imagenes necesarias. Se verifica en la terminal si los servicios funcionan, en el que se verifica que estaban activas.
+
+Utilizar un abiente reproducible es de suma importancia, ya que permite a los integrantes ejecutar el proyecto con las mismas herramientas y configuraciones; reduciendo erorres y que el análisis pueda repetirse. 
 
 ## Como descargar los datos
 
@@ -146,7 +148,7 @@ Para verificar si los archivos fueron descargados de forma correcta: docker comp
 
 El resultado mostro que si descargó el conjunto de datos completamente.
 
-
+Consultar de forma directa un archivo parquet implica que DuckDB lee los datos desde el archivo almacenado en el disco sin necesidad de importarlo previamente a una tabla de base de datos. Y resulta útil para gran volumen de datos evitando duplicar información, reduce el uso de almacenamiento y se puede ejecutar consultas exploratorias de forma rápida sobre los archivos originales. 
 ## Como ejecutar el analisis
 
 El análisis exploratorio de los archivos Parquet se ejecuta con ejercicio3.py consultando directamente la cantidad de archivos disponibles, cantidad de registros, las columnas y tipos de datos y una muestra de registros y posibles problemas de calidad. 
