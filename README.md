@@ -123,11 +123,35 @@ generar los resultados principales.
 
 ## Como descargar los datos
 
-<!-- TODO (Ejercicios 2.6, 5.1 y 8.1) -->
+Para descargar los datos se utilizó "scripts/download_data.py", donde se obtienen los archivos públicados para taxis amarillos y taxis verdes del año 2026. 
+
+Se debe de tener el ambiente levantado con Docker compose: bash docker compose up --build 
+
+En la otra terminal, desde la carpeta de raíz del proyecto se hizo la descarga completa con: docker compose exec lab python scripts/download_data.py. 
+
+También permitió descargar un solo tipo de taxi: 
+docker compose exec lab python scripts/download_data.py --taxi yellow.
+docker compose exec lab python scripts/download_data.py --taxi green. 
+
+Los archivos descargados se almacenan en: dat/raw/<tipo>/2026/
+
+En la ejecución, se descargó 16 archivos, 8 de taxis amarillos, 8 de taxis verdes correspondientes a cada mes del 2026 desde enero hasta agosto, ya que de septiembre a diciembre aun no se han publicado, obteniendo: 
+
+descargados   : 16
+ya existian   : 0
+no publicados : 8
+fallidos: 0
+
+Para verificar si los archivos fueron descargados de forma correcta: docker compose exec lab bash -ln "find data/raw -type f -name '*.parquet'"
+
+El resultado mostro que si descargó el conjunto de datos completamente.
+
 
 ## Como ejecutar el analisis
 
-<!-- TODO -->
+El análisis exploratorio de los archivos Parquet se ejecuta con ejercicio3.py consultando directamente la cantidad de archivos disponibles, cantidad de registros, las columnas y tipos de datos y una muestra de registros y posibles problemas de calidad. 
+
+Se notó  registros con distancia menor o igual a cero y hay montos negativos, por lo que estos datos deberan revisarse antes de usarse en el análisis finales. 
 
 ## Como reproducir los benchmarks
 
