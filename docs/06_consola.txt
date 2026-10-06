@@ -1,0 +1,72 @@
+Creando la tabla trips_tbl (puede tardar unos minutos)...
+trips_tbl: 68,842,371 filas en 15.13 s
+[1/48] 1_mes_2026    Q1_conteo              parquet  1.a=   1.240s  mediana=   1.000s
+[2/48] 1_mes_2026    Q1_conteo              tabla    1.a=   0.004s  mediana=   0.003s
+[3/48] 1_mes_2026    Q2_viajes_por_mes      parquet  1.a=   1.022s  mediana=   1.014s
+[4/48] 1_mes_2026    Q2_viajes_por_mes      tabla    1.a=   0.098s  mediana=   0.059s
+[5/48] 1_mes_2026    Q3_viajes_por_hora     parquet  1.a=   1.307s  mediana=   1.174s
+[6/48] 1_mes_2026    Q3_viajes_por_hora     tabla    1.a=   0.016s  mediana=   0.012s
+[7/48] 1_mes_2026    Q4_filtro_selectivo    parquet  1.a=   1.251s  mediana=   1.242s
+[8/48] 1_mes_2026    Q4_filtro_selectivo    tabla    1.a=   0.013s  mediana=   0.012s
+[9/48] 1_mes_2026    Q5_percentiles_tarifa  parquet  1.a=   1.133s  mediana=   1.221s
+[10/48] 1_mes_2026    Q5_percentiles_tarifa  tabla    1.a=   0.145s  mediana=   0.164s
+[11/48] 1_mes_2026    Q6_propina_por_pago    parquet  1.a=   1.088s  mediana=   1.095s
+[12/48] 1_mes_2026    Q6_propina_por_pago    tabla    1.a=   0.027s  mediana=   0.029s
+[13/48] 3_meses_2026  Q1_conteo              parquet  1.a=   1.407s  mediana=   1.336s
+[14/48] 3_meses_2026  Q1_conteo              tabla    1.a=   0.008s  mediana=   0.009s
+[15/48] 3_meses_2026  Q2_viajes_por_mes      parquet  1.a=   1.396s  mediana=   1.358s
+[16/48] 3_meses_2026  Q2_viajes_por_mes      tabla    1.a=   0.135s  mediana=   0.141s
+[17/48] 3_meses_2026  Q3_viajes_por_hora     parquet  1.a=   1.313s  mediana=   1.348s
+[18/48] 3_meses_2026  Q3_viajes_por_hora     tabla    1.a=   0.031s  mediana=   0.029s
+[19/48] 3_meses_2026  Q4_filtro_selectivo    parquet  1.a=   1.479s  mediana=   1.429s
+[20/48] 3_meses_2026  Q4_filtro_selectivo    tabla    1.a=   0.031s  mediana=   0.030s
+[21/48] 3_meses_2026  Q5_percentiles_tarifa  parquet  1.a=   1.794s  mediana=   1.835s
+[22/48] 3_meses_2026  Q5_percentiles_tarifa  tabla    1.a=   0.521s  mediana=   0.399s
+[23/48] 3_meses_2026  Q6_propina_por_pago    parquet  1.a=   1.338s  mediana=   1.373s
+[24/48] 3_meses_2026  Q6_propina_por_pago    tabla    1.a=   0.067s  mediana=   0.070s
+[25/48] anio_2024     Q1_conteo              parquet  1.a=   2.177s  mediana=   1.972s
+[26/48] anio_2024     Q1_conteo              tabla    1.a=   0.018s  mediana=   0.016s
+[27/48] anio_2024     Q2_viajes_por_mes      parquet  1.a=   2.268s  mediana=   2.328s
+[28/48] anio_2024     Q2_viajes_por_mes      tabla    1.a=   0.510s  mediana=   0.509s
+[29/48] anio_2024     Q3_viajes_por_hora     parquet  1.a=   2.230s  mediana=   2.100s
+[30/48] anio_2024     Q3_viajes_por_hora     tabla    1.a=   0.112s  mediana=   0.118s
+[31/48] anio_2024     Q4_filtro_selectivo    parquet  1.a=   2.132s  mediana=   2.077s
+[32/48] anio_2024     Q4_filtro_selectivo    tabla    1.a=   0.116s  mediana=   0.114s
+[33/48] anio_2024     Q5_percentiles_tarifa  parquet  1.a=   3.559s  mediana=   4.219s
+[34/48] anio_2024     Q5_percentiles_tarifa  tabla    1.a=   2.512s  mediana=   1.915s
+[35/48] anio_2024     Q6_propina_por_pago    parquet  1.a=   2.430s  mediana=   2.510s
+[36/48] anio_2024     Q6_propina_por_pago    tabla    1.a=   0.300s  mediana=   0.235s
+[37/48] todo          Q1_conteo              parquet  1.a=   3.548s  mediana=   3.088s
+[38/48] todo          Q1_conteo              tabla    1.a=   0.007s  mediana=   0.007s
+[39/48] todo          Q2_viajes_por_mes      parquet  1.a=   3.544s  mediana=   3.542s
+[40/48] todo          Q2_viajes_por_mes      tabla    1.a=   0.731s  mediana=   0.742s
+[41/48] todo          Q3_viajes_por_hora     parquet  1.a=   3.170s  mediana=   3.235s
+[42/48] todo          Q3_viajes_por_hora     tabla    1.a=   0.197s  mediana=   0.179s
+[43/48] todo          Q4_filtro_selectivo    parquet  1.a=   3.093s  mediana=   3.073s
+[44/48] todo          Q4_filtro_selectivo    tabla    1.a=   0.162s  mediana=   0.166s
+[45/48] todo          Q5_percentiles_tarifa  parquet  1.a=   5.644s  mediana=   6.974s
+[46/48] todo          Q5_percentiles_tarifa  tabla    1.a=   3.380s  mediana=   3.222s
+[47/48] todo          Q6_propina_por_pago    parquet  1.a=   4.505s  mediana=   3.849s
+[48/48] todo          Q6_propina_por_pago    tabla    1.a=   0.313s  mediana=   0.305s
+
+======================================================================
+Tabla creada en 15.13 s
+Parquet: 1,172 MB | lab.duckdb: 1,499 MB
+Resultados en docs/benchmark.csv y docs/benchmark.md
+
+
+6.9 (análisis)
+
+La tabla materializada fue más rápida que la consulta directa sobre Parquet en las 24 combinaciones de consulta y volumen. Con los 68.8 millones de filas, la mejora osciló entre 2.2x (Q5, percentiles) y 18.5x (Q4, filtro), con 4.8x en Q2 y 12.6x en Q6. Las consultas con cálculos más costosos, como los percentiles, mostraron la menor ventaja relativa, porque su tiempo lo domina el cálculo y no la lectura.
+
+El comportamiento cambió con el volumen. Con un mes (3.5 millones de filas) la ventaja fue mayor, por ejemplo 17x en Q2, y con todos los datos bajó a 4.8x. Parquet mostró un costo base cercano a 1 s incluso con un mes, que atribuimos a la apertura de los archivos, la lectura de metadatos y la limpieza recalculada. La tabla creció casi proporcionalmente al volumen.
+
+Crear la tabla costó 15.13 s. Con un ahorro promedio de unos 3.2 s por consulta sobre el conjunto completo, ese costo se recupera tras aproximadamente cinco consultas. El archivo lab.duckdb ocupó 1,499 MB frente a 1,172 MB de Parquet, un 28 % más.
+
+Limitaciones: la fuente Parquet recalcula la limpieza en cada consulta mientras que la tabla ya la tiene aplicada, por lo que la diferencia no se debe solo al formato. Además, la primera ejecución no fue en frío, porque la creación de la tabla había leído previamente los archivos.
+
+6.10 (cuándo usar cada estrategia)
+
+Consultar Parquet directamente es adecuado para exploración puntual, cuando se ejecutan pocas consultas, cuando llegan archivos nuevos con frecuencia (no hay que recargar nada) o cuando se quiere ahorrar espacio en disco. Con pocas consultas, los 15 s de crear la tabla no se compensan.
+
+Materializar una tabla conviene cuando se hacen muchas consultas repetidas sobre los mismos datos, como el tablero de Metabase del ejercicio 7, cuando se quiere guardar una versión ya limpia y transformada, o cuando la latencia importa. El costo es el espacio extra y tener que reconstruir o actualizar la tabla al llegar datos nuevos.
