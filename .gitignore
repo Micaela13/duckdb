@@ -20,3 +20,6 @@ venv/
 Thumbs.db
 .idea/
 .vscode/
+
+# Override local para evitar conflictos de puertos con otros proyectos
+docker-compose.override.yml

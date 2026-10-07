@@ -1,33 +1,33 @@
 # Resultados del benchmark (Ejercicio 6)
 
-- Creacion de la tabla `trips_tbl`: **15.13 s** (68,842,371 filas)
-- Tamano de los Parquet (data/raw): **1,172 MB**
-- Tamano de lab.duckdb: **1,499 MB**
+- Creacion de la tabla `trips_tbl`: **11.48 s** (113,556,358 filas)
+- Tamano de los Parquet (data/raw): **1,977 MB**
+- Tamano de lab.duckdb: **2,482 MB**
 - Repeticiones por consulta: 5 (mediana sin la 1.a)
 
 | volumen | filas | consulta | parquet (mediana s) | tabla (mediana s) | tabla/parquet |
 |---|---|---|---|---|---|
-| 1_mes_2026 | 3,553,853 | Q1_conteo | 1.0 | 0.003 | 0.00x |
-| 1_mes_2026 | 3,553,853 | Q2_viajes_por_mes | 1.014 | 0.059 | 0.06x |
-| 1_mes_2026 | 3,553,853 | Q3_viajes_por_hora | 1.174 | 0.012 | 0.01x |
-| 1_mes_2026 | 3,553,853 | Q4_filtro_selectivo | 1.242 | 0.012 | 0.01x |
-| 1_mes_2026 | 3,553,853 | Q5_percentiles_tarifa | 1.221 | 0.164 | 0.13x |
-| 1_mes_2026 | 3,553,853 | Q6_propina_por_pago | 1.095 | 0.029 | 0.03x |
-| 3_meses_2026 | 10,601,451 | Q1_conteo | 1.336 | 0.009 | 0.01x |
-| 3_meses_2026 | 10,601,451 | Q2_viajes_por_mes | 1.358 | 0.141 | 0.10x |
-| 3_meses_2026 | 10,601,451 | Q3_viajes_por_hora | 1.348 | 0.029 | 0.02x |
-| 3_meses_2026 | 10,601,451 | Q4_filtro_selectivo | 1.429 | 0.03 | 0.02x |
-| 3_meses_2026 | 10,601,451 | Q5_percentiles_tarifa | 1.835 | 0.399 | 0.22x |
-| 3_meses_2026 | 10,601,451 | Q6_propina_por_pago | 1.373 | 0.07 | 0.05x |
-| anio_2024 | 40,302,302 | Q1_conteo | 1.972 | 0.016 | 0.01x |
-| anio_2024 | 40,302,302 | Q2_viajes_por_mes | 2.328 | 0.509 | 0.22x |
-| anio_2024 | 40,302,302 | Q3_viajes_por_hora | 2.1 | 0.118 | 0.06x |
-| anio_2024 | 40,302,302 | Q4_filtro_selectivo | 2.077 | 0.114 | 0.05x |
-| anio_2024 | 40,302,302 | Q5_percentiles_tarifa | 4.219 | 1.915 | 0.45x |
-| anio_2024 | 40,302,302 | Q6_propina_por_pago | 2.51 | 0.235 | 0.09x |
-| todo | 68,842,371 | Q1_conteo | 3.088 | 0.007 | 0.00x |
-| todo | 68,842,371 | Q2_viajes_por_mes | 3.542 | 0.742 | 0.21x |
-| todo | 68,842,371 | Q3_viajes_por_hora | 3.235 | 0.179 | 0.06x |
-| todo | 68,842,371 | Q4_filtro_selectivo | 3.073 | 0.166 | 0.05x |
-| todo | 68,842,371 | Q5_percentiles_tarifa | 6.974 | 3.222 | 0.46x |
-| todo | 68,842,371 | Q6_propina_por_pago | 3.849 | 0.305 | 0.08x |
+| 1_mes_2026 | 3,553,867 | Q1_conteo | 0.253 | 0.002 | 0.01x |
+| 1_mes_2026 | 3,553,867 | Q2_viajes_por_mes | 0.281 | 0.026 | 0.09x |
+| 1_mes_2026 | 3,553,867 | Q3_viajes_por_hora | 0.263 | 0.006 | 0.02x |
+| 1_mes_2026 | 3,553,867 | Q4_filtro_selectivo | 0.286 | 0.006 | 0.02x |
+| 1_mes_2026 | 3,553,867 | Q5_percentiles_tarifa | 0.33 | 0.086 | 0.26x |
+| 1_mes_2026 | 3,553,867 | Q6_propina_por_pago | 0.266 | 0.014 | 0.05x |
+| 3_meses_2026 | 10,601,465 | Q1_conteo | 0.33 | 0.003 | 0.01x |
+| 3_meses_2026 | 10,601,465 | Q2_viajes_por_mes | 0.383 | 0.066 | 0.17x |
+| 3_meses_2026 | 10,601,465 | Q3_viajes_por_hora | 0.353 | 0.017 | 0.05x |
+| 3_meses_2026 | 10,601,465 | Q4_filtro_selectivo | 0.358 | 0.015 | 0.04x |
+| 3_meses_2026 | 10,601,465 | Q5_percentiles_tarifa | 0.541 | 0.216 | 0.40x |
+| 3_meses_2026 | 10,601,465 | Q6_propina_por_pago | 0.381 | 0.032 | 0.08x |
+| anio_2024 | 40,302,328 | Q1_conteo | 0.639 | 0.008 | 0.01x |
+| anio_2024 | 40,302,328 | Q2_viajes_por_mes | 0.829 | 0.223 | 0.27x |
+| anio_2024 | 40,302,328 | Q3_viajes_por_hora | 0.723 | 0.063 | 0.09x |
+| anio_2024 | 40,302,328 | Q4_filtro_selectivo | 0.592 | 0.053 | 0.09x |
+| anio_2024 | 40,302,328 | Q5_percentiles_tarifa | 1.701 | 0.982 | 0.58x |
+| anio_2024 | 40,302,328 | Q6_propina_por_pago | 0.771 | 0.099 | 0.13x |
+| todo | 113,556,358 | Q1_conteo | 1.832 | 0.005 | 0.00x |
+| todo | 113,556,358 | Q2_viajes_por_mes | 2.18 | 0.651 | 0.30x |
+| todo | 113,556,358 | Q3_viajes_por_hora | 1.846 | 0.176 | 0.10x |
+| todo | 113,556,358 | Q4_filtro_selectivo | 1.456 | 0.137 | 0.09x |
+| todo | 113,556,358 | Q5_percentiles_tarifa | 5.248 | 2.889 | 0.55x |
+| todo | 113,556,358 | Q6_propina_por_pago | 2.512 | 0.254 | 0.10x |
